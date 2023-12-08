@@ -11,18 +11,17 @@ In this section, you’ll use Python and SQLAlchemy to do a basic climate analys
   2. Use the SQLAlchemy create_engine() function to connect to your SQLite database
   3. Use the SQLAlchemy automap_base() function to reflect your tables into classes, and then save references to the classes named station and measurement
   4. Link Python to the database by creating a SQLAlchemy session.
+  **IMPORTANT**
+  Remember to close your session at the end of your notebook.
+  5. Perform a precipitation analysis and then a station analysis by completing the steps in the following two subsections.
 
-[!IMPORTANT]
-Remember to close your session at the end of your notebook.
+**Precipitation Analysis**
+1. Find the most recent date in the dataset.
+2. Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
 
-Perform a precipitation analysis and then a station analysis by completing the steps in the following two subsections.
+[!TIP] Don’t pass the date as a variable to your query.
 
-Precipitation Analysis
-Find the most recent date in the dataset.
 
-Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
-
-HINT
 Select only the "date" and "prcp" values.
 
 Load the query results into a Pandas DataFrame. Explicitly set the column names.

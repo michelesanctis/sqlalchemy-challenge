@@ -12,7 +12,7 @@ In this section, you’ll use Python and SQLAlchemy to do a basic climate analys
   3. Use the SQLAlchemy automap_base() function to reflect your tables into classes, and then save references to the classes named station and measurement
   4. Link Python to the database by creating a SQLAlchemy session.
 
-[! IMPORTANT]
+[!IMPORTANT]
 Remember to close your session at the end of your notebook.
 
 Perform a precipitation analysis and then a station analysis by completing the steps in the following two subsections.
